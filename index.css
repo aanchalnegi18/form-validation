@@ -1,0 +1,89 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+   
+
+.container {
+  position: absolute; /* Allows positioning relative to the viewport */
+  top: -100px; /* Start above the viewport */
+  height: 200px;
+  width: 250px;
+  visibility: hidden;
+  background-color: red;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+transition: top 300ms ease; /* Smooth transition for the top property */
+}
+
+.active {
+  visibility: visible;
+  top: 50px; /* Final position after transition */
+}
+
+.content{
+  height: 100%;
+  width: 100%;
+padding: 10px;
+gap:10px;
+  background-color: beige;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+button{
+  background-color: greenyellow;
+  height: 50px;
+  width: 90%;
+  transition: 300ms ease;
+}
+.newdiv{
+  width: 200px;
+  display: flex;
+  background-color: rosybrown;
+  transition: background-color  300ms ease-out 1s;
+}
+.form-container {
+  width: 300px;
+  margin: 10px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-container label {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+}
+
+.form-container input {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.form-container button {
+  padding: 10px;
+  font-size: 16px;
+  background-color: greenyellow;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 300ms ease;
+}
+
+.form-container button:hover {
+  background-color: #32cd32;
+}
